@@ -1,0 +1,54 @@
+{
+  "license": "MIT",
+  "version": "1.0.0",
+  "type": "module",
+  "name": "astrohelm-workspace",
+  "homepage": "https://astrohelm.ru",
+  "description": "Astrohelm Bun workspace example",
+  "author": "Alexander Ivanov <sashapop101@gmail.com>",
+  "keywords": [
+    "bunjs",
+    "zero-dependencies",
+    "prettier",
+    "eslint",
+    "ts",
+    "workspace",
+    "example",
+    "preset",
+    "starter-kit",
+    "astrohelm",
+    "typescript"
+  ],
+
+  "main": "index.ts",
+  "module": "index.ts",
+  "readmeFilename": "README.md",
+  "browser": {},
+  "files": ["/lib", "/types"],
+
+  "scripts": {
+    "test": "bun test",
+    "dev": "bun ./index",
+    "prettier:fix": "prettier --write \"**/*.{js,ts,json,html,cjs,md,yaml}\"",
+    "eslint:fix": "eslint --fix \"**/*.{js,ts}\""
+  },
+
+  "repository": { "type": "git", "url": "git+https://github.com/astrohelm/bun-workspace.git" },
+  "bugs": {
+    "url": "https://github.com/astrohelm/bun-workspace/issues",
+    "email": "sashapop101@gmail.com"
+  },
+
+  "devDependencies": {
+    "bun-types": "latest",
+    "eslint": "^8.49.0",
+    "eslint-config-astrohelm": "^1.1.1",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
